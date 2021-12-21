@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="candidate.css">
+    <title>Title</title>
+</head>
+<body>
+
+<h2>Velkommen til overblikket over kandidater til kommunalvalget i Vallensbæk</h2>
+
+<h5>Opret kandidat nedenfor</h5>
+
+<button id="votes">Se valgresultat</button>
+
+
+<div class="create-candidate" id="candidate">
+
+    <label>Navn</label>
+    <input id="create-candidate-name" placeholder="Indtast navnet på kandidat">
+
+    <label>Parti</label>
+
+    <select id="create-candidate-political-party">
+        <option>A. Socialdemokratiet </option>
+        <option>B. Radikale Venstre</option>
+        <option>C. Det Konservative Folkeparti</option>
+        <option>D. Nye Borgerlige</option>
+        <option>F. SF - Socialistisk Folkeparti</option>
+        <option>O. Dansk Folkeparti</option>
+        <option>T. VallensbækListen</option>
+        <option>Ø. Enhedslisten - De Rød-Grønne</option>
+    </select>
+    <button id="create-candidate-btn" onclick="directToCandidate()" >+</button>
+
+    <br>
+
+</div>
+
+<select id="search-candidate-dropdown">
+    <option value="Alle">Alle</option>
+    <option value="A. Socialdemokratiet">A. Socialdemokratiet</option>
+    <option value="B. Radikale Venstre">B. Radikale Venstre</option>
+    <option value="C. Det Konservative Folkeparti">C. Det Konservative Folkeparti</option>
+    <option value="D. Nye Borgerlige">D. Nye Borgerlige</option>
+    <option value="F. SF - Socialistisk Folkeparti">F. SF - Socialistisk Folkeparti</option>
+    <option value="O. Dansk Folkeparti">O. Dansk Folkeparti</option>
+    <option value="T. VallensbækListen">T. VallensbækListen</option>
+    <option value="Ø. Enhedslisten - De Rød-Grønne">Ø. Enhedslisten - De Rød-Grønne</option>
+</select>
+<button id="search-party">Search</button>
+
+
+
+<table class="candidate-overview">
+    <thead>
+    <tr>
+        <td>Navn</td>
+        <td>Parti</td>
+        <td>Rediger</td>
+        <td>Slet</td>
+    </tr>
+    </thead>
+
+    <tbody id="candidate-tbody"></tbody>
+
+
+</table>
+
+
+<script src="candidate.js"></script>
+<script src="createCandidate.js"></script>
+<script src="../votes/votes.js"></script>
+
+</body>
+</html>

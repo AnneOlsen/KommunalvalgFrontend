@@ -1,0 +1,14 @@
+body{
+    background-color: antiquewhite;
+}
+
+div{
+
+    margin: auto;
+}
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}

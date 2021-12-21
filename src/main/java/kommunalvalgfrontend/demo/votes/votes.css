@@ -1,0 +1,25 @@
+body{
+    background-color: antiquewhite;
+}
+
+h2{
+    text-align: center;
+}
+
+.votes{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: left;
+}
+
+.back{
+    margin: auto;
+    margin-left: 550px;
+    padding: 10px;
+    text-align: center;
+}
+
+.vote-elements{
+    text-align: left;
+}
